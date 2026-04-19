@@ -1,0 +1,18 @@
+<h2>Get and set the value:</h2>
+<br />
+
+<h2>Name will display here:- {{ displayName }}</h2>
+
+<input
+  type="text"
+  placeholder="Enter your name"
+  (input)="getName($event)"
+  value="{{ InputName }}"
+/>
+<button (click)="showName()">get name</button>
+<button (click)="setDefaultName()">set default name</button>
+<hr />
+<h2>Email will display here: {{ email }}</h2>
+<input type="text" value="{{ email }}" placeholder="Enter your email..." #emailField />
+<button (click)="getEmail(emailField.value)">getEmail</button>
+<button (click)="setDefaultEmail()">setEmail</button>

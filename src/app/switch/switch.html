@@ -1,0 +1,21 @@
+<h1>Switch component:-</h1>
+
+<button (click)="handleColor('green')">green</button>
+<button (click)="handleColor('red')">red</button>
+<button (click)="handleColor('yellow')">yellow</button>
+<button (click)="handleColor('black')">other</button>
+
+@switch (color) {
+  @case ('green') {
+    <div style="width: 50px; height: 50px; background-color: green"></div>
+  }
+  @case ('red') {
+    <div style="width: 50px; height: 50px; background-color: red"></div>
+  }
+  @case ('yellow') {
+    <div style="width: 50px; height: 50px; background-color: yellow"></div>
+  }
+  @default {
+    <div style="width: 50px; height: 50px; background-color: black"></div>
+  }
+}

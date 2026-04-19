@@ -1,0 +1,13 @@
+<h1>Loop component</h1>
+
+<!-- @for (item of name; track item) {
+  <p>{{ item }}</p>
+} -->
+
+@for (student of students; track student.name; let id = $index) {
+  <div>
+    <span>{{ id }}</span>
+    <span>{{ student.email }}</span>
+    <button (click)="getName(student.name)">getName</button>
+  </div>
+}
