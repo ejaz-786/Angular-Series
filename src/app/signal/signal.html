@@ -3,4 +3,17 @@
 <h2>signal value:- {{ count() }}</h2>
 <h2>normal value:- {{ val }}</h2>
 
-<button>Increase</button>
+<button (click)="increaseValue()">Increase</button>
+<h2>data value:- {{ data() }}</h2>
+
+<button (click)="updateValue()">update data</button>
+<h2>-: computed Signal :-</h2>
+
+<button (click)="showValue()">show</button>
+
+<h2>count value:- {{ countval() }}</h2>
+<button (click)="toggleValue()">show page(2)</button>
+
+@if (display) {
+  <div style="height: 20px; background-color: red; margin: 10px"></div>
+}

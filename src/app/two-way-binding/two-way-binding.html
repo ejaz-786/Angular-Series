@@ -1,0 +1,12 @@
+<h1>Two way Binding in angular;</h1>
+
+<p>Inpute Example:-</p>
+<!-- <input type="text" placeholder="Enter your name " (input)="changeName($event)" /> -->
+
+<input [(ngModel)]="name" placeholder="Enter name.." />
+
+<input [(ngModel)]="email" type="email" name="email" placeholder="Enter email" />
+
+<h2>Input value: {{ name }}</h2>
+
+<h2>Email value: - {{ email }}</h2>

@@ -11,3 +11,25 @@
     <button (click)="getName(student.name)">getName</button>
   </div>
 }
+<h2>User name List:-</h2>
+
+@for (name of newArr; track name; let i = $index; let f = $first; let l = $last) {
+  <!-- <h3>{{ $last }}</h3> -->
+
+  <!-- @if ($first || $last) { -->
+  <!-- @if (f || l) {
+    <div style="background-color: red">{{ i + 1 }}. User name is : {{ name }}</div>
+  } @else {
+    <div style="background-color: rgb(236, 255, 23)">{{ i + 1 }}. User name is : {{ name }}</div>
+  } -->
+
+  @if ($odd) {
+    <div style="background-color: gainsboro">{{ i }} the user name is:- {{ name }}</div>
+  }
+
+  @if ($even) {
+    <div style="background-color: rgb(154, 255, 14)">{{ i }} the user name is:- {{ name }}</div>
+  }
+} @empty {
+  <div>No result found</div>
+}

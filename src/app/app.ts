@@ -22,6 +22,8 @@ import { ControlFlow } from './control-flow/control-flow';
 import { Switch } from './switch/switch';
 import { Loop } from './loop/loop';
 import { Signal } from './signal/signal';
+import { TwoWayBinding } from './two-way-binding/two-way-binding';
+import { Todolist } from './todolist/todolist';
 
 // @Component({
 //   selector: 'app-root',
@@ -35,7 +37,18 @@ import { Signal } from './signal/signal';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, SignUP, Counter, Event, ControlFlow, Switch, Loop, Signal],
+  imports: [
+    Login,
+    SignUP,
+    Counter,
+    Event,
+    ControlFlow,
+    Switch,
+    Loop,
+    Signal,
+    TwoWayBinding,
+    Todolist,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

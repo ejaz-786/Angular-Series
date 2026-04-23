@@ -1,0 +1,23 @@
+<h1>Todo List component</h1>
+
+<input [(ngModel)]="task" type="text" placeholder="Enter Task" />
+
+<button (click)="addTask()">Add task</button>
+
+@for (task of taskList; track task.id) {
+  <ul class="task-list">
+    <li>{{ task.id }}</li>
+    <li>{{ task.task }}</li>
+    <li><button (click)="deleteTask(task.id)">Delete</button></li>
+  </ul>
+}
+
+<button (click)="sizeChange()">toggleSize</button>
+
+<h2 [style.fontSize]="zoom ? bigSize : smallSize">dynamci style</h2>
+
+<!-- @if (zoom) {
+  <h2 [style.fontSize]="bigSize">Dynamic style</h2>
+} @else {
+  <h2 [style.fontSize]="smallSize">Dynamic style</h2>
+} -->

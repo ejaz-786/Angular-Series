@@ -35,4 +35,8 @@ export class Loop {
   getName(val: any) {
     console.log('name:', val);
   }
+
+  newArr: any = ['ejaz', 'anil', 'swarup', 'saklen', 'nitish'];
+
+  // newArr: any = [];
 }
